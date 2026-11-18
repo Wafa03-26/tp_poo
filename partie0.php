@@ -5,7 +5,7 @@ class Voiture {
     public $couleur;
 
     public function setMarque($m) {
-        $this->marque = $m;
+        $this->marque = $m; // $this = l'objet qui appelle la méthode
     }
 
     public function setCouleur($c) {
@@ -13,7 +13,7 @@ class Voiture {
     }
 
     public function afficher() {
-        echo "<br> Marque : " . $this->marque . 
+        echo " Marque : " . $this->marque . 
              " || Couleur : " . $this->couleur . PHP_EOL;
     } // $this = l'objet qui appelle la méthode
 
